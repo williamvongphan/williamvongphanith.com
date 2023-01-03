@@ -1,0 +1,19 @@
+.underlinedHeader {
+    top: 0;
+    left: 0;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    font-family: var(--font-mono);
+    font-weight: 400;
+}
+
+.underlinedHeader:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 8px;
+    height: 16px;
+    background: linear-gradient(90deg, #F03434 0%, #F2C018 100%);
+    z-index: -1;
+}

@@ -1,0 +1,23 @@
+{
+  "red": {
+    "darker": "#130101",
+    "dark": "#850A0A",
+    "medium": "#F03434",
+    "light": "#F57A7A",
+    "lighter": "#FBC6C6"
+  },
+  "orange": {
+    "darker": "#120A01",
+    "dark": "#9A5609",
+    "medium": "#F28C18",
+    "light": "#F7BC78",
+    "lighter": "#FCE2C5"
+  },
+  "yellow": {
+    "darker": "#0A1201",
+    "dark": "#A58A09",
+    "medium": "#F2C018",
+    "light": "#F7E078",
+    "lighter": "#FCF4C5"
+  }
+}
