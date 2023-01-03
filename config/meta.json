@@ -1,0 +1,22 @@
+{
+  "title": "Thunder's Portfolio",
+  "description": "I'm a fullstack web developer with (here it comes) a passion for creating beautiful and functional websites. I'm currently attending Stuyvesant High School as part of the Class of 2023.",
+  "keywords": "nextjs, portfolio, personal website, react, github, javascript, nodejs, thunderredstar",
+  "favicon": "https://red.thdr.me/favicon.ico",
+  "image": "https://red.thdr.me/og.png",
+  "url": "https://red.thdr.me",
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@ThunderRedStar",
+    "creator": "@ThunderRedStar"
+  },
+  "og": {
+    "site-name": "ThunderRedStar",
+    "title": "ThunderRedStar",
+    "description": "ThunderRedStar's Portfolio",
+    "image": "https://red.thdr.me/og.png",
+    "url": "https://red.thdr.me",
+    "type": "website"
+  },
+  "theme-color": "#000000"
+}
