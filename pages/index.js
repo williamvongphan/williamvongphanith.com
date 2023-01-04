@@ -13,8 +13,8 @@ export default function Home() {
         <Section
           name="Introduction"
         >
-          <UnderlinedHeader>
-            <Text h1>A header</Text>
+          <UnderlinedHeader anchor={"header"}>
+            A header
           </UnderlinedHeader>
           <Text p>
             Music production is the process of creating and recording music. It involves a range of tasks, including composing, arranging, recording, editing, and mixing. The goal of music production is to bring the music to life, creating a final product that captures the intended vision and emotion of the artist.
@@ -29,8 +29,8 @@ export default function Home() {
         <Section
           name="Section 2"
         >
-          <UnderlinedHeader>
-            <Text h1>Another section header</Text>
+          <UnderlinedHeader anchor={"another-header"}>
+            Another section header
           </UnderlinedHeader>
           <Text p>
             Artificial intelligence (AI) has the potential to revolutionize every industry and aspect of our lives. It is a rapidly growing field that encompasses a wide range of technologies, from machine learning algorithms that can analyze vast amounts of data to natural language processing systems that can understand and respond to human language. AI has already made significant strides in areas such as image and speech recognition, and it has the potential to transform industries such as healthcare, finance, and transportation. The possibilities are nearly endless, and as AI continues to advance, it will undoubtedly change the way we live and work.
@@ -39,8 +39,8 @@ export default function Home() {
         <Section
           name="It never ends"
         >
-          <UnderlinedHeader>
-            <Text h1>Yet another header</Text>
+          <UnderlinedHeader anchor={"yet-another-header"}>
+            Yet another header
           </UnderlinedHeader>
           <Text p>
             Discord is a communication platform designed for gamers, communities, and other groups. With Discord, users can connect via voice, video, or text and share media and files with each other. The app is available on a variety of platforms including desktop, web, and mobile, making it easy to stay connected with your community no matter where you are. Discord also features a wide range of customization options, including the ability to create and join servers, create and join channels, and customize your user profile. With its robust set of features and user-friendly interface, Discord has become a popular choice for gamers and communities looking for a way to stay connected and communicate online.
