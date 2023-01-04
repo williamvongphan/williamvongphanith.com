@@ -1,11 +1,11 @@
 {
-  "title": "Thunder's Portfolio",
+  "title": "William's Portfolio",
   "description": "I'm a fullstack web developer with (here it comes) a passion for creating beautiful and functional websites. I'm currently attending Stuyvesant High School as part of the Class of 2023.",
-  "keywords": "nextjs, portfolio, personal website, react, github, javascript, nodejs, thunderredstar",
-  "author": "ThunderRedStar",
-  "favicon": "https://red.thdr.me/favicon.ico",
-  "image": "https://red.thdr.me/og.png",
-  "url": "https://red.thdr.me",
+  "keywords": "nextjs, portfolio, personal website, react, github, javascript, nodejs",
+  "author": "William Vongphanith",
+  "favicon": "https://hi.williamvongphanith.com/favicon.ico",
+  "image": "https://hi.williamvongphanith.com/og.png",
+  "url": "https://hi.williamvongphanith.com",
   "theme-color": "#F03434",
   "twitter": "@Thunder_RedStar"
 }
