@@ -1,0 +1,15 @@
+.projectItem {
+    width: 100%;
+}
+
+.projectItemName {
+    font-family: var(--font-sans) !important;
+}
+
+.fontSans {
+    font-family: var(--font-sans) !important;
+}
+
+.projectItemDescription {
+    font-size: 1.5rem;
+}

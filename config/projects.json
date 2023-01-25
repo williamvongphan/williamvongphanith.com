@@ -1,0 +1,148 @@
+[
+  {
+    "name": "StuyActivities",
+    "description": "A website that allows students and faculty at Stuyvesant to create and manage student-run extracurricular activities. Used by over 3300 students at Stuyvesant High School.",
+    "tags": [
+      "Website",
+      "School",
+      "Fullstack"
+    ],
+    "stack": {
+      "Frontend": [
+        "React",
+        "Apollo Client",
+        "Material UI"
+      ],
+      "Backend": [
+        "Node.js",
+        "Express",
+        "Apollo Server",
+        "GraphQL",
+        "MySQL",
+        "Sequelize"
+      ],
+      "Deployment": [
+        "CapRover",
+        "Netlify",
+        "DigitalOcean"
+      ]
+    },
+    "link": "https://stuyactivities.org",
+    "image": "/img/projects/stuyactivities.png"
+  },
+  {
+    "name": "Stuyvesant Opportunities Bulletin",
+    "description": "A first-of-its-kind, student-developed online compendium of opportunities for Stuyvesant students, based on the weekly newsletter sent out by Mr. Blumm. Designed to be a one-stop shop for all opportunities at Stuyvesant, including internships, competitions, and more.",
+    "tags": [
+      "Website",
+      "School",
+      "Fullstack"
+    ],
+    "stack": {
+      "Frontend": [
+        "React",
+        "Apollo Client",
+        "Material UI"
+      ],
+      "Backend": [
+        "Node.js",
+        "Express",
+        "Apollo Server",
+        "GraphQL",
+        "MySQL",
+        "Sequelize"
+      ],
+      "Deployment": [
+        "CapRover",
+        "Docker",
+        "DigitalOcean"
+      ]
+    },
+    "link": "https://opportunities.stuysu.org",
+    "image": "/img/projects/opportunities.png"
+  },
+  {
+    "name": "LAMP: Linear Algebra Multiplayer Projection",
+    "description": "A multiplayer game designed to teach the concept of projection in linear algebra. Players are given random vectors and must project them onto randomly assigned target vectors. The players with the most points are placed on the leaderboard.",
+    "tags": [
+      "Website",
+      "Fun",
+      "Fullstack"
+    ],
+    "stack": {
+      "Frontend": [
+        "Tailwind.css",
+        "EJS",
+        "Socket.io"
+      ],
+      "Backend": [
+        "Node.js",
+        "Express",
+        "Socket.io",
+        "MongoDB",
+        "Mongoose"
+      ],
+      "Deployment": [
+        "PM2",
+        "Oracle Cloud"
+      ]
+    },
+    "link": "https://lamp.williamvongphanith.com",
+    "image": "/img/projects/lamp.png"
+  },
+  {
+    "name": "MCYT (Discord Bot)",
+    "description": "A Discord bot originally created for a fandom that has since blown up in popularity. Offering unseen-before features such as a fanfiction reader from Discord and a pagination system for long messages, MCYT has grown into a large-scale, production-ready bot. Now in 150 servers with over 96,000 users.",
+    "tags": [
+      "Discord",
+      "Fun",
+      "Fullstack"
+    ],
+    "stack": {
+      "Frontend": [
+        "Discord.js",
+        "Express",
+        "EJS"
+      ],
+      "Backend": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Mongoose"
+      ],
+      "Deployment": [
+        "PM2",
+        "Oracle Cloud"
+      ]
+    },
+    "link": "https://github.com/thunder-red-star/mcyt-rewrite",
+    "image": "/img/projects/mcyt.png"
+  },
+  {
+    "name": "SU IT Homepage",
+    "description": "A landing page for the Stuyvesant IT Department, offering a quick overview of our members and projects to the public, and internal resources and utilities for our members. Built with React, Next.js, and Tailwind.css.",
+    "tags": [
+      "Website",
+      "School",
+      "Fullstack"
+    ],
+    "stack": {
+      "Frontend": [
+        "React",
+        "Next.js",
+        "Tailwind.css"
+      ],
+      "Backend": [
+        "Node.js",
+        "Express",
+        "JSON Web Tokens"
+      ],
+      "Deployment": [
+        "PM2",
+        "Vercel"
+      ]
+    },
+    "link": "https://it-stuysu-org.vercel.app",
+    "image": "/img/projects/suit.png"
+  }
+]

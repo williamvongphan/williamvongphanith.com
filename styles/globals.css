@@ -36,3 +36,17 @@ p, li, a, span, button, input, textarea, select, label, .text {
 .text {
   font-size: 1.5rem !important;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: var(--red-medium);
+}

@@ -7,7 +7,7 @@ const lightTheme = createTheme({
   theme: {
     colors: {
       "background": "#FBC6C6",
-      "foreground": "#FBC6C6",
+      "foreground": "#000000",
       "sectionColor": "#000000",
     },
   }

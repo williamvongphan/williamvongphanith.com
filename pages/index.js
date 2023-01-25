@@ -1,18 +1,37 @@
 import styles from '../styles/Home.module.css'
 import Meta from "../components/Header/Meta";
 import UnderlinedHeader from "../components/Design/UnderlinedHeader";
-import { Text } from "@nextui-org/react";
+import {Link, Text} from "@nextui-org/react";
 import Section from "../components/Design/Section";
 import LanguageItemGroup from "../components/Programming/LanguageItemGroup";
+import ProjectGroup from "../components/Programming/ProjectGroup";
 
 import programmingSkills from "../config/programming.json";
+import projects from "../config/projects.json";
 import IntroductionHero from "../components/Design/IntroductionHero";
+import ThemeSwitcher from "../components/Theme/ThemeSwitcher";
+import React from "react";
+import Image from "next/image";
 
 export default function Home() {
+  React.useEffect(() => {
+    let a = "wvongphan";
+    let b = "gmai";
+    let c = "l🔹co";
+    let d = "m";
+    let e = " 📧 ";
+    let f = "ith3";
+    let g = "0";
+
+    let email = a + f + g + e + b + c + d;
+    document.getElementById("email").innerHTML = email;
+  }, []);
+
   return (
     <div className={styles.container}>
       <Meta title="Home" />
       <main className={styles.main}>
+        <ThemeSwitcher />
         <Section
         >
           <IntroductionHero/>
@@ -27,26 +46,23 @@ export default function Home() {
             p
             class={"text"}
           >
-            Music production is the process of creating and recording music. It involves a range of tasks, including composing, arranging, recording, editing, and mixing. The goal of music production is to bring the music to life, creating a final product that captures the intended vision and emotion of the artist.
-
-            There are many different approaches to music production, and the process can vary greatly depending on the type of music being produced and the resources available. Some music producers work in professional studios with a team of engineers and musicians, while others prefer to work independently in home studios.
-
-            Regardless of the setup, music production requires a combination of technical skills and creative vision. Producers must have a strong understanding of music theory, as well as the ability to use a variety of software and hardware tools to record, edit, and mix audio. They must also have a keen ear for detail and be able to bring out the best in the music and the artist.
-
-            As the music industry continues to evolve, the role of the music producer has become increasingly important. In addition to traditional production tasks, producers now often play a key role in shaping the direction and sound of a project, collaborating with artists to bring their vision to life and help them stand out in a crowded marketplace.
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
+            I'm William Vongphanith, and I'm a 15-year-old AI and web developer. I'm currently a senior at Stuyvesant High School, and have done work with professors at the University of Michigan and executives from Weill-Cornell Medicine.
+            I'm really passionate about technology, and in my free time, I work on miscellaneous interesting AI projects and open-source projects. I also love to produce music on Fast Tracker II.
           </Text>
         </Section>
         <Section
-          name="Projects"
+          name="Skills"
         >
           <UnderlinedHeader anchor={"what"}>
-            What do I do?
+            What do I know?
           </UnderlinedHeader>
           <Text
             p
             class={"text"}
           >
-            Artificial intelligence (AI) has the potential to revolutionize every industry and aspect of our lives. It is a rapidly growing field that encompasses a wide range of technologies, from machine learning algorithms that can analyze vast amounts of data to natural language processing systems that can understand and respond to human language. AI has already made significant strides in areas such as image and speech recognition, and it has the potential to transform industries such as healthcare, finance, and transportation. The possibilities are nearly endless, and as AI continues to advance, it will undoubtedly change the way we live and work.
+            I have experience in a multitude of programming languages and frameworks, and I'm always looking to learn more. I'm especially proficient in machine learning frameworks, like Tensorflow and Flux, and web frameworks, like Next.js and React.
+            Below, you can find a comprehensive list of my programming skills and skill levels.
           </Text>
           <LanguageItemGroup
             title="Languages"
@@ -62,6 +78,22 @@ export default function Home() {
           />
         </Section>
         <Section
+          name="Projects"
+        >
+          <UnderlinedHeader anchor={"when"}>
+            When have I done it?
+          </UnderlinedHeader>
+          <Text
+            p
+            class={"text"}
+          >
+            I'm happy to show you! Please click on any of the below projects to learn more about them, how they were built, and view their live deployments.
+          </Text>
+          <ProjectGroup
+            projects={projects}
+          />
+        </Section>
+        <Section
           name="Contact"
         >
           <UnderlinedHeader anchor={"where"}>
@@ -71,7 +103,26 @@ export default function Home() {
             p
             class={"text"}
           >
-            Discord is a communication platform designed for gamers, communities, and other groups. With Discord, users can connect via voice, video, or text and share media and files with each other. The app is available on a variety of platforms including desktop, web, and mobile, making it easy to stay connected with your community no matter where you are. Discord also features a wide range of customization options, including the ability to create and join servers, create and join channels, and customize your user profile. With its robust set of features and user-friendly interface, Discord has become a popular choice for gamers and communities looking for a way to stay connected and communicate online.
+            There are many ways to reach me. I've listed them below:
+            <span class={"block"}>
+              <b>Email:</b> <span id={"email"}></span>
+            </span>
+            <span class={"block text-sm"}
+            >
+              Sorry for the formatting! This is to prevent the majority of spam bots from scraping my email.
+            </span>
+            <span class={"block"}>
+              <b>GitHub:</b> <Link href={"https://github.com/williamvongphan"}>williamvongphan</Link>
+            </span>
+            <span class={"block"}>
+              <b>LinkedIn:</b> <Link href={"https://www.linkedin.com/in/william-vongphanith/"}>William Vongphanith</Link>
+            </span>
+          </Text>
+          <Text
+            p
+            class={"text mt-4"}
+          >
+            This website is open-source, and you can find the source code <Link href={"https://github.com/williamvongphan/williamvongphanith.com"}>here</Link>.
           </Text>
         </Section>
       </main>
