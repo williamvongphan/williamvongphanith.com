@@ -47,8 +47,7 @@ export default function Home() {
             class={"text"}
           >
             {/* eslint-disable-next-line react/no-unescaped-entities */}
-            I'm William Vongphanith, and I'm a 15-year-old AI and web developer. I'm currently a senior at Stuyvesant High School, and have done work with professors at the University of Michigan and executives from Weill-Cornell Medicine.
-            I'm really passionate about technology, and in my free time, I work on miscellaneous interesting AI projects and open-source projects. I also love to produce music on Fast Tracker II.
+            I'm William Vongphanith, and I'm a 15-year-old AI and web developer. I'm currently a senior at Stuyvesant High School, and have done work with professors at the University of Michigan and executives from Weill-Cornell Medicine. I'm really passionate about technology, and in my free time, I work on miscellaneous interesting AI projects and open-source projects. I also love to produce music on Fast Tracker II.
           </Text>
         </Section>
         <Section
@@ -61,6 +60,7 @@ export default function Home() {
             p
             class={"text"}
           >
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             I have experience in a multitude of programming languages and frameworks, and I'm always looking to learn more. I'm especially proficient in machine learning frameworks, like Tensorflow and Flux, and web frameworks, like Next.js and React.
             Below, you can find a comprehensive list of my programming skills and skill levels.
           </Text>
@@ -87,6 +87,7 @@ export default function Home() {
             p
             class={"text"}
           >
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             I'm happy to show you! Please click on any of the below projects to learn more about them, how they were built, and view their live deployments.
           </Text>
           <ProjectGroup
@@ -103,6 +104,7 @@ export default function Home() {
             p
             class={"text"}
           >
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             There are many ways to reach me. I've listed them below:
             <span class={"block"}>
               <b>Email:</b> <span id={"email"}></span>
