@@ -144,5 +144,33 @@
     },
     "link": "https://it-stuysu-org.vercel.app",
     "image": "/img/projects/suit.png"
+  },
+  {
+    "name": "StuyFBLA website (WIP)",
+    "description": "A website for the Stuyvesant chapter of Future Business Leaders of America, a national organization for students interested in business. Built with React, Next.js, and Tailwind.css.",
+    "tags": [
+      "Website",
+      "School",
+      "Fullstack"
+    ],
+    "stack": {
+      "Frontend": [
+        "React",
+        "Next.js",
+        "Tailwind.css"
+      ],
+      "Backend": [
+        "MongoDB",
+        "Payload CMS",
+        "Express"
+      ],
+      "Deployment": [
+        "PM2",
+        "Vercel",
+        "DigitalOcean"
+      ]
+    },
+    "link": "https://stuyfbla.com",
+    "image": "/img/projects/stuyfbla.png"
   }
 ]

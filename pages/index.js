@@ -11,8 +11,19 @@ import projects from "../config/projects.json";
 import IntroductionHero from "../components/Design/IntroductionHero";
 import ThemeSwitcher from "../components/Theme/ThemeSwitcher";
 import React from "react";
-import Image from "next/image";
 
+import GeometricShapeScroller from "../components/Design/GeometricShapeScroller";
+
+function yearsSince (birthDate) {
+  const today = new Date();
+  // Calculate a decimal number of years (can be 15.91293192391293)
+  const years = (today - birthDate) / (365.25 * 24 * 60 * 60 * 1000);
+  return Math.floor(years);
+}
+
+function distanceFromTopOfPage(element) {
+  return element.getBoundingClientRect().top;
+}
 export default function Home() {
   React.useEffect(() => {
     let a = "wvongphan";
@@ -25,16 +36,25 @@ export default function Home() {
 
     let email = a + f + g + e + b + c + d;
     document.getElementById("email").innerHTML = email;
+
+    // Calculate age
+    const birthDate = new Date("2007-03-04");
+    setInterval(() => {
+      document.getElementById("age").innerHTML = yearsSince(birthDate).toString();
+    },1);
   }, []);
 
   return (
     <div className={styles.container}>
       <Meta title="Home" />
       <main className={styles.main}>
+        <GeometricShapeScroller />
+
         <ThemeSwitcher />
         <Section
         >
           <IntroductionHero/>
+
         </Section>
         <Section
           name="About Me"
@@ -44,10 +64,27 @@ export default function Home() {
           </UnderlinedHeader>
           <Text
             p
-            class={"text"}
+            class={"text mb-4"}
           >
             {/* eslint-disable-next-line react/no-unescaped-entities */}
-            I'm William Vongphanith, and I'm a 15-year-old AI and web developer. I'm currently a senior at Stuyvesant High School, and have done work with professors at the University of Michigan and executives from Weill-Cornell Medicine. I'm really passionate about technology, and in my free time, I work on miscellaneous interesting AI projects and open-source projects. I also love to produce music on Fast Tracker II.
+            I'm William Vongphanith, and I'm a <span id={"age"} style={{fontFamily: "--var(--font-mono)"}}></span>-year-old AI and web developer based in the greater New York City area.
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
+            &nbsp;I'm currently a high school senior at <Link href={"https://stuy.enschool.org/"}>Stuyvesant High School</Link>, and will be attending college in the fall of 2023.
+          </Text>
+          <Text
+            p
+            class={"text mb-4"}
+          >
+            My main areas of interest in computer science span <b>machine learning and artificial intelligence</b>, <b>web development</b>, and <b>software engineering</b>.
+            My research covers a wide range of topics, including <b>recurrent neural networks</b>, <b>computer vision</b>, <b>natural language processing</b>, and <b>application development</b>.
+            I&apos;ve worked with <Link href={"https://rajrao.engin.umich.edu/"}>Professor Raj Rao</Link> at the University of Michigan, <Link href={"http://micromind.com"}>Mr. Peter Brooks</Link> from Stuyvesant High School and Micromind, and <Link href={"https://directory.weill.cornell.edu/person/profile/slvuong"}>Ms. Susan Vuong</Link> at Weill Cornell Medicine.
+          </Text>
+          <Text
+            p
+            class={"text mb-4"}
+          >
+            On the side, I really love producing music on <Link href={"https://wikipedia.com/wiki/FastTracker_II"}>FastTracker II</Link>, and I heartily enjoy developing websites, Discord bots, and other pieces of software for myself, friends, and strangers alike. Please look at my <Link href={"#when"}>projects</Link> section to see some of my work!
+            Please feel free to use any of the methods listed in the <Link href={"#where"}>contact</Link> section below, if you&apos;d like to get in touch with me or commission/contract me for a project.
           </Text>
         </Section>
         <Section
@@ -88,7 +125,7 @@ export default function Home() {
             class={"text"}
           >
             {/* eslint-disable-next-line react/no-unescaped-entities */}
-            I'm happy to show you! Please click on any of the below projects to learn more about them, how they were built, and view their live deployments.
+            I'm happy to show you! Please click on any of the below project dropdowns to learn more about them, how they were built, and view their live deployments.
           </Text>
           <ProjectGroup
             projects={projects}
