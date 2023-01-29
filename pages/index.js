@@ -67,7 +67,7 @@ export default function Home() {
             class={"text mb-4"}
           >
             {/* eslint-disable-next-line react/no-unescaped-entities */}
-            I'm William Vongphanith, and I'm a <span id={"age"} style={{fontFamily: "--var(--font-mono)"}}></span>-year-old AI and web developer based in the greater New York City area.
+            I'm William Vongphanith, and I'm a <span id={"age"} style={{fontFamily: "--var(--font-mono)"}}></span>-year-old AI and web developer based in New York City.
             {/* eslint-disable-next-line react/no-unescaped-entities */}
             &nbsp;I'm currently a high school senior at <Link href={"https://stuy.enschool.org/"}>Stuyvesant High School</Link>, and will be attending college in the fall of 2023.
           </Text>

@@ -9,14 +9,14 @@ export default function ProjectItem({ name, description, tags, stack, link, imag
 			<div className={styles.projectItemHeader}>
 				<Link
 					href={link}
-					color="success"
+					color={"primary"}
 				>
-						<Text h2 className={styles.projectItemName + " font-sans m-0"}>
+						<span className={styles.projectItemName + " font-sans m-0 text-4xl font-bold"}>
 							{name}
-						</Text>
-						<Text p className={"m-2 text-sm font-sans"}>
+						</span>
+						<span p className={"m-2 font-sans"}>
 							Click to view project
-						</Text>
+						</span>
 				</Link>
 				<div
 					className={styles.projectItemTags + " flex flex-row flex-wrap gap-2 my-2"}
